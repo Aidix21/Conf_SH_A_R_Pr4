@@ -1,0 +1,18 @@
+\ Конфигурация веб-сервера
+const MAXCONN = 0o2000 \ 1024
+const PORT = 0o1750 \ 1000
+
+[
+  SERVER => [
+    LISTEN => $(PORT),
+    WORKERS => 0o4,
+    ROOT => [
+      PATH => 0o0, \ Условно путь закодирован числом
+      AUTOINDEX => 0o1
+    ]
+  ],
+  LOGS => [
+    LEVEL => 0o7,
+    ROTATE => 0o10
+  ]
+]
