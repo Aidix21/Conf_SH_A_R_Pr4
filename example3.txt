@@ -1,0 +1,15 @@
+\ Тема оформления
+const BASECOLOR = 0o377 \ 255
+const PADDING = 0o12 \ 10
+
+[
+  WINDOW => [
+    BG => $(BASECOLOR),
+    FG => 0o0,
+    MARGIN => $(PADDING + 0o2) \ 10 + 2 = 12
+  ],
+  BUTTON => [
+    WIDTH => 0o200,
+    HEIGHT => $(PADDING + PADDING) \ 20
+  ]
+]
